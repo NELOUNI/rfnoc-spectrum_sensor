@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--This defines one NoC-Block.-->
+<!--Default XML file-->
+<nocblock>
+  <name>binAggr</name>
+  <blockname>binAggr</blockname>
+  <doc> 
+    Block controller for the Bin Aggregator RFNoC block.
+    Input is binned in output_vlen chunks of data
+  </doc>
+  <ids>
+    <id revision="0">B17A</id>
+  </ids>
+  <registers>
+    <setreg>
+      <name>INPUT_VLEN</name> 
+      <address>131</address> 
+    </setreg>
+    <setreg>
+      <name>OUTPUT_VLEN</name> 
+      <address>132</address> 
+    </setreg>
+  </registers>
+  <args>
+    <arg>
+      <name>nbr_bins</name> 
+      <type>int</type> 
+      <value>50</value>  
+      <check>GE($nbr_bins, 1) AND LE($nbr_bins, 65535)</check>
+      <check_message>Bin Aggregator nbr_bins constant must be within [1, 65535]</check_message>
+      <action>SR_WRITE("OUTPUT_VLEN", $nbr_bins)</action> 
+    </arg>
+    <arg>
+      <name>fft_size</name> 
+      <type>int</type> 
+      <value>256</value>  
+      <check>GE($fft_size, 0) AND LE($fft_size, 65535)</check>
+      <check_message>Bin Aggregator fft_size constant must be within [0, 65535]</check_message>
+      <action>SR_WRITE("INPUT_VLEN", $fft_size)</action> 
+    </arg>
+  </args>
+  <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+      <vlen>$fft_size</vlen>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type>
+      <vlen>$nbr_bins</vlen>
+    </source>
+  </ports>
+</nocblock>

@@ -1,0 +1,30 @@
+INCLUDE(FindPkgConfig)
+PKG_CHECK_MODULES(PC_SPECTRUM_SENSOR spectrum_sensor)
+
+FIND_PATH(
+    SPECTRUM_SENSOR_INCLUDE_DIRS
+    NAMES spectrum_sensor/api.h
+    HINTS $ENV{SPECTRUM_SENSOR_DIR}/include
+        ${PC_SPECTRUM_SENSOR_INCLUDEDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/include
+          /usr/local/include
+          /usr/include
+)
+
+FIND_LIBRARY(
+    SPECTRUM_SENSOR_LIBRARIES
+    NAMES gnuradio-spectrum_sensor
+    HINTS $ENV{SPECTRUM_SENSOR_DIR}/lib
+        ${PC_SPECTRUM_SENSOR_LIBDIR}
+    PATHS ${CMAKE_INSTALL_PREFIX}/lib
+          ${CMAKE_INSTALL_PREFIX}/lib64
+          /usr/local/lib
+          /usr/local/lib64
+          /usr/lib
+          /usr/lib64
+)
+
+INCLUDE(FindPackageHandleStandardArgs)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(SPECTRUM_SENSOR DEFAULT_MSG SPECTRUM_SENSOR_LIBRARIES SPECTRUM_SENSOR_INCLUDE_DIRS)
+MARK_AS_ADVANCED(SPECTRUM_SENSOR_LIBRARIES SPECTRUM_SENSOR_INCLUDE_DIRS)
+

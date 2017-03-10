@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1spectrum__sensor_1_1binAggr__impl" kind="class" prot="public">
+    <compoundname>gr::spectrum_sensor::binAggr_impl</compoundname>
+    <basecompoundref refid="classgr_1_1spectrum__sensor_1_1binAggr" prot="public" virt="non-virtual">gr::spectrum_sensor::binAggr</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">rfnoc_block_impl</basecompoundref>
+    <includes refid="binAggr__impl_8h" local="no">binAggr_impl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a7f426e54d3bd1c95a28124ad0cedd1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::spectrum_sensor::binAggr_impl::binAggr_impl</definition>
+        <argsstring>(const int fft_size, const int nbr_bins, const int samp_rate, const int center_freq, const int bandwidth, const int channel_bw, std::vector&lt; unsigned int &gt; output_bin_index, const gr::ettus::device3::sptr &amp;dev, const int block_select, const int device_select)</argsstring>
+        <name>binAggr_impl</name>
+        <param>
+          <type>const int</type>
+          <declname>fft_size</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nbr_bins</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>center_freq</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>bandwidth</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>channel_bw</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt;</type>
+          <declname>output_bin_index</declname>
+        </param>
+        <param>
+          <type>const gr::ettus::device3::sptr &amp;</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>block_select</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>device_select</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/lib/binAggr_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a11fc86858b80940aa335f2e02ada068d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::spectrum_sensor::binAggr_impl::~binAggr_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~binAggr_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/lib/binAggr_impl.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a01855c2e110aab3cc904d64d71b086d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void gr::spectrum_sensor::binAggr_impl::set_bin_index</definition>
+        <argsstring>(const int fft_size, const int nbr_bins, const int samp_rate, const int center_freq, const int bandwidth, const int channel_bw, std::vector&lt; unsigned int &gt; output_bin_index)</argsstring>
+        <name>set_bin_index</name>
+        <reimplements refid="classgr_1_1spectrum__sensor_1_1binAggr_1aa366332b27024fb36b24d856065385bc">set_bin_index</reimplements>
+        <param>
+          <type>const int</type>
+          <declname>fft_size</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nbr_bins</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>samp_rate</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>center_freq</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>bandwidth</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>channel_bw</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned int &gt;</type>
+          <declname>output_bin_index</declname>
+        </param>
+        <briefdescription>
+<para>Update the bin_indeces vactor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/lib/binAggr_impl.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>gr::spectrum_sensor::binAggr_impl</label>
+        <link refid="classgr_1_1spectrum__sensor_1_1binAggr__impl"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="15">
+        <label>gr::ettus::rfnoc_block_impl</label>
+      </node>
+      <node id="13">
+        <label>gr::spectrum_sensor::binAggr</label>
+        <link refid="classgr_1_1spectrum__sensor_1_1binAggr"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>gr::spectrum_sensor::binAggr_impl</label>
+        <link refid="classgr_1_1spectrum__sensor_1_1binAggr__impl"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="19">
+        <label>gr::ettus::rfnoc_block_impl</label>
+      </node>
+      <node id="17">
+        <label>gr::spectrum_sensor::binAggr</label>
+        <link refid="classgr_1_1spectrum__sensor_1_1binAggr"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/lib/binAggr_impl.h" line="32" column="1" bodyfile="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/lib/binAggr_impl.h" bodystart="31" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a7f426e54d3bd1c95a28124ad0cedd1ee" prot="public" virt="non-virtual"><scope>gr::spectrum_sensor::binAggr_impl</scope><name>binAggr_impl</name></member>
+      <member refid="classgr_1_1spectrum__sensor_1_1binAggr_1a881f439659db1c09e199871c9a9b1d87" prot="public" virt="non-virtual"><scope>gr::spectrum_sensor::binAggr_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a01855c2e110aab3cc904d64d71b086d0" prot="public" virt="virtual"><scope>gr::spectrum_sensor::binAggr_impl</scope><name>set_bin_index</name></member>
+      <member refid="classgr_1_1spectrum__sensor_1_1binAggr_1acebe13f2e693e05751843981ca0f4dec" prot="public" virt="non-virtual"><scope>gr::spectrum_sensor::binAggr_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1spectrum__sensor_1_1binAggr__impl_1a11fc86858b80940aa335f2e02ada068d" prot="public" virt="non-virtual"><scope>gr::spectrum_sensor::binAggr_impl</scope><name>~binAggr_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

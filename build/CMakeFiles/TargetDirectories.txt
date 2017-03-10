@@ -1,0 +1,14 @@
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/_spectrum_sensor_swig.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/_spectrum_sensor_swig_doc_tag.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/_spectrum_sensor_swig_swig_tag.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/docs/doxygen/CMakeFiles/doxygen_target.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/lib/CMakeFiles/gnuradio-spectrum_sensor.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/CMakeFiles/noc_block_binAggr_tb.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/apps/CMakeFiles/pygen_apps_9a6dd.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/python/CMakeFiles/pygen_python_2d782.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/pygen_swig_41896.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/spectrum_sensor_swig_swig_2d0df.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/CMakeFiles/spectrum_sensor_swig_swig_doc.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/lib/CMakeFiles/test-spectrum_sensor.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/CMakeFiles/test_tb.dir
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/CMakeFiles/uninstall.dir

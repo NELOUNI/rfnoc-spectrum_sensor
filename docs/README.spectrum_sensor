@@ -1,0 +1,11 @@
+This is the spectrum_sensor-write-a-block package meant as a guide to building
+out-of-tree packages. To use the spectrum_sensor blocks, the Python namespaces
+is in 'spectrum_sensor', which is imported as:
+
+    import spectrum_sensor
+
+See the Doxygen documentation for details about the blocks available
+in this package. A quick listing of the details can be found in Python
+after importing by using:
+
+    help(spectrum_sensor)

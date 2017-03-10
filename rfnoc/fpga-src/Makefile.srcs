@@ -1,0 +1,4 @@
+$(addprefix /users/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/rfnoc/fpga-src/, \
+noc_block_binAggr.v \
+binAggr.v \
+) \

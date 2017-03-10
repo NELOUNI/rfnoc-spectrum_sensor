@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<block>
+  <name>RFNoC: binAggr</name>
+  <key>spectrum_sensor_binAggr</key>
+  <category>spectrum_sensor</category>
+  <import>import spectrum_sensor</import>
+  <make>spectrum_sensor.binAggr(
+    $fft_size,
+    $nbr_bins,
+    $samp_rate,
+    $center_freq,
+    $bandwidth,
+    $channel_bw,
+    $output_bin_index,
+    self.device3,
+    #if $block_index()
+    ${block_index},
+    #else
+    -1,
+    #end if
+    #if $device_index()
+    ${device_index},
+    #else
+    -1,
+    #end if
+)
+<!--\# Set them twice just in case:
+self.$(id).set_bin_index($fft_size, $nbr_bins, $samp_rate, $center_freq, $bandwidth, $channel_bw,$output_bin_index)</make>-->
+</make>
+  <!--<callback>set_bin_index($fft_size, $nbr_bins, $samp_rate, $center_freq, $bandwidth, $channel_bw, $output_bin_index)</callback>-->
+  <param>
+    <name>Host Data Type</name>
+    <key>type</key>
+    <type>enum</type>
+    <option>
+      <name>Complex float32</name>
+      <key>fc32</key>
+      <opt>type:complex</opt>
+    </option>
+    <option>
+      <name>Complex int16</name>
+      <key>sc16</key>
+      <opt>type:sc16</opt>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>u8</key>
+      <opt>type:byte</opt>
+    </option>
+    <option>
+      <name>VITA word32</name>
+      <key>item32</key>
+      <opt>type:s32</opt>
+    </option>
+  </param>
+  <!--RFNoC basic block configuration -->
+  <param>
+    <name>Bin Aggr Select</name>
+    <key>block_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($block_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+  <param>
+    <name>Device Select</name>
+    <key>device_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($device_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+  <param>
+    <name>FPGA Module Name</name>
+    <key>fpga_module_name</key>
+    <value>noc_block_binAggr</value>
+    <type>string</type>
+    <hide>all</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+  <param>
+    <name>Device Format</name>
+    <key>otw</key>
+    <type>enum</type>
+    <option>
+      <name>Complex int16</name>
+      <key>sc16</key>
+    </option>
+    <option>
+      <name>Complex int8</name>
+      <key>sc8</key>
+    </option>
+    <option>
+      <name>Byte</name>
+      <key>u8</key>
+    </option>
+  </param>
+  <param>
+    <name>FFT Size</name>
+    <key>fft_size</key>
+    <value>64</value>
+    <type>int</type>
+    <option>
+      <name>8</name>
+      <key>8</key>
+    </option>
+    <option>
+      <name>16</name>
+      <key>16</key>
+    </option>
+    <option>
+      <name>32</name>
+      <key>32</key>
+    </option>
+    <option>
+      <name>64</name>
+      <key>64</key>
+    </option>
+    <option>
+      <name>128</name>
+      <key>128</key>
+    </option>
+    <option>
+      <name>256</name>
+      <key>256</key>
+    </option>
+    <option>
+      <name>512</name>
+      <key>512</key>
+    </option>
+    <option>
+      <name>1024</name>
+      <key>1024</key>
+    </option>
+    <option>
+      <name>2048</name>
+      <key>2048</key>
+    </option>
+    <option>
+      <name>4096</name>
+      <key>4096</key>
+    </option>
+  </param>
+  <param>
+      <name>Nbr of Bins</name>
+      <key>nbr_bins</key>
+      <value>50</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Sample Rate</name>
+      <key>samp_rate</key>
+      <!--<value>20000000</value>-->
+      <value>1000000</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Center Frequency</name>
+      <key>center_freq</key>
+      <value>724000000</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Bandwidth</name>
+      <key>bandwidth</key>
+      <value>9000000</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Channel Bandwidth</name>
+      <key>channel_bw</key>
+      <value>180000</value>
+      <type>int</type>
+  </param>
+  <param>
+      <name>Output Bin Index</name>
+      <key>output_bin_index</key>
+      <!--<value>[0]*$fft_size</value>-->
+      <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>$type.type</type>
+    <vlen>$fft_size</vlen>
+    <domain>rfnoc</domain>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>$type.type</type>
+    <vlen>$nbr_bins</vlen>
+    <domain>rfnoc</domain>
+  </source>
+</block>

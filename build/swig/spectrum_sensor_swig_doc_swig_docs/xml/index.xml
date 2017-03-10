@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classgr_1_1spectrum__sensor_1_1binAggr" kind="class"><name>gr::spectrum_sensor::binAggr</name>
+    <member refid="classgr_1_1spectrum__sensor_1_1binAggr_1acebe13f2e693e05751843981ca0f4dec" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1spectrum__sensor_1_1binAggr_1a881f439659db1c09e199871c9a9b1d87" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1spectrum__sensor_1_1binAggr_1aa366332b27024fb36b24d856065385bc" kind="function"><name>set_bin_index</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1spectrum__sensor" kind="namespace"><name>gr::spectrum_sensor</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a8b1cbd216453ee541e56afee2c21ab70" kind="define"><name>SPECTRUM_SENSOR_API</name></member>
+  </compound>
+  <compound refid="binAggr_8h" kind="file"><name>binAggr.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/include</name>
+  </compound>
+  <compound refid="dir_a62903229af52b422a5ac0f45621e2b6" kind="dir"><name>/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/include/spectrum_sensor</name>
+  </compound>
+</doxygenindex>

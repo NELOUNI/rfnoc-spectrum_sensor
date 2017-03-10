@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a62903229af52b422a5ac0f45621e2b6" kind="dir">
+    <compoundname>spectrum_sensor</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="binAggr_8h">binAggr.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/include/spectrum_sensor/"/>
+  </compounddef>
+</doxygen>

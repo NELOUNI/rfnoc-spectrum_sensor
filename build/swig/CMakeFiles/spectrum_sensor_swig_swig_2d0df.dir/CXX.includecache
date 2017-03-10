@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/raid/nae/gnuradio_RFNOC/src/rfnoc-spectrum_sensor/build/swig/spectrum_sensor_swig_swig_2d0df.cpp
+
