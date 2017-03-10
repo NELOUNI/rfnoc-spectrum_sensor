@@ -1,4 +1,3 @@
-# gr-spectrum_sensor
-Integrating UHD and fpga files into one directory
+# rfnoc-spectrum_sensor
 
-Based on copy block - Bypassing input into output
+RFNoC-based Spectrum Sensor including Bin Aggregation and Bin Stats blocks
